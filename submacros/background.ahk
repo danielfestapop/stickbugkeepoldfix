@@ -74,6 +74,7 @@ loop {
 	nm_guidingStarDetect()
 	nm_dailyReconnect()
 	nm_EmergencyBalloon()
+	nm_StickbugCheck()
 	sleep 1000
 }
 
@@ -175,7 +176,11 @@ nm_popStarCheck(){
 		}
 	}
 }
-
+nm_StickbugCheck() {
+	
+	return
+}
+	
 nm_CheckNight() {
 	static nightConfidence := 0, NightLastDetected := 0, LastNightState := 0
 	; 0 = day, 1 = night, 2 = dusk
